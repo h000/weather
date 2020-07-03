@@ -17,11 +17,30 @@
 			console.log("도시이름  : "+ resp.name );
 			console.log("구름  : "+ (resp.clouds.all) +"%" );
 
-			var cityName = resp.name;
-			$("#city").html(cityName);
 			var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
 			$("#weather-img").attr("src", imgURL);
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
+			var img = load_img(temp);
+			$("#clothes-img").attr("src", img);
 		}
 	})
+
+	function load_img(temp){
+		var img;
+		if (temp >= 27)
+			img = "";
+		else if (temp >= 23)
+			img = "";
+		else if (temp >= 20)
+			img = "";
+		else if (temp >= 17)
+			img = "";
+		else if (temp >= 12)
+			img = "";
+		else if (temp >= 10)
+			img = "";
+		else
+			img = "";
+		return (img);
+	}
