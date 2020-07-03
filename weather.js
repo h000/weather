@@ -17,9 +17,11 @@
 			console.log("도시이름  : "+ resp.name );
 			console.log("구름  : "+ (resp.clouds.all) +"%" );
 
+			var cityName = resp.name;
+			$("#city").html(cityName);
 			var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
 			$("#weather-img").attr("src", imgURL);
-			var temp = resp.weather[0].main;
+			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
 		}
 	})
