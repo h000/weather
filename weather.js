@@ -19,6 +19,7 @@
 
 			var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
 			$("#weather-img").attr("src", imgURL);
-			$(document).val(resp.main.temp- 273.15);
+			var temp = resp.weather[0].main;
+			$("#temperature").html(temp);
 		}
 	})
