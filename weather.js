@@ -29,18 +29,18 @@
 	function load_img(temp){
 		var img;
 		if (temp >= 27)
-			img = "";
+			img = "27_2.jpeg";
 		else if (temp >= 23)
-			img = "";
+			img = "23_26_1.png";
 		else if (temp >= 20)
-			img = "";
+			img = "20_22_1.jpeg";
 		else if (temp >= 17)
-			img = "";
+			img = "17_19_1.jpeg";
 		else if (temp >= 12)
-			img = "";
+			img = "12_16_1.jpeg";
 		else if (temp >= 10)
-			img = "";
+			img = "10_11_1.jpeg";
 		else
-			img = "";
+			img = "6_9coat1.jpeg";
 		return (img);
 	}
