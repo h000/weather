@@ -22,7 +22,14 @@
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
 			var img = load_img(temp);
+			// window.onload = function()
+			// {
+			// var button = document.getElementById("right");
+			// button.onclick = (img = load_img_2(temp));
+			// }
+			// 버튼이 눌리면 img = load_img(temp);
 			$("#clothes-img").attr("src", img);
+
 		}
 	})
 
@@ -43,4 +50,31 @@
 		else
 			img = "6_9coat1.jpeg";
 		return (img);
+	}
+
+	function load_img_2(temp){
+		var img;
+		if (temp >= 27)
+			img = "27_1.jpeg";
+		else if (temp >= 23)
+			img = "23_26_2.png";
+		else if (temp >= 20)
+			img = "20_22_2.jpeg";
+		else if (temp >= 17)
+			img = "17_19_2.jpeg";
+		else if (temp >= 12)
+			img = "12_16_2.jpeg";
+		else if (temp >= 10)
+			img = "10_11_2.png";
+		else
+			img = "6_9coat2.jpeg";
+		return (img);
+	}
+
+	function left_click() {
+		alert("왼쪽을 누르셨습니다.");
+	}
+
+	function right_click() {
+		alert("오른쪽을 누르셨습니다.");
 	}
