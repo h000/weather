@@ -22,6 +22,7 @@
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
 			var img = load_img(temp);
+<<<<<<< HEAD
 			// window.onload = function()
 			// {
 			// var button = document.getElementById("right");
@@ -29,27 +30,41 @@
 			// }
 			// 버튼이 눌리면 img = load_img(temp);
 			$("#clothes-img").attr("src", img);
+=======
+			var i = 0;
+			$("#clothes-img").attr("src", img[i]);
+				var left = document.querySelector("#left");
+				var right = document.querySelector("#right");
+				left.addEventListener("click", function(){
+					i = 0;
+					$("#clothes-img").attr("src", img[i]);
+				});
+				right.addEventListener("click", function(){
+					i = 1;
+					$("#clothes-img").attr("src", img[i]);
+				});
+>>>>>>> 0bacf8def300d1621c4cc124598d20f19b2d6bc2
 
 		}
 	})
 
 	function load_img(temp){
-		var img;
 		if (temp >= 27)
-			img = "27_2.jpeg";
+			var img = ["27_1.jpeg", "27_2.jpeg"];
 		else if (temp >= 23)
-			img = "23_26_1.png";
+			var img = ["23_26_1.png", "23_26_2.png"];
 		else if (temp >= 20)
-			img = "20_22_1.jpeg";
+			var img = ["20_22_1.jpeg", "20_22_2.jpeg"];
 		else if (temp >= 17)
-			img = "17_19_1.jpeg";
+			var img = ["17_19_1.jpeg", "17_19_2.jpeg"];
 		else if (temp >= 12)
-			img = "12_16_1.jpeg";
+			var img = ["12_16_1.jpeg", "12_16_2.jpeg"];
 		else if (temp >= 10)
-			img = "10_11_1.jpeg";
+			var img = ["10_11_1.jpeg", "10_11_2.jpeg"];
 		else
-			img = "6_9coat1.jpeg";
+			var img = ["6_9coat1.jpeg", "6_9coat2.jpeg"];
 		return (img);
+<<<<<<< HEAD
 	}
 
 	function load_img_2(temp){
@@ -77,4 +92,6 @@
 
 	function right_click() {
 		alert("오른쪽을 누르셨습니다.");
+=======
+>>>>>>> 0bacf8def300d1621c4cc124598d20f19b2d6bc2
 	}
