@@ -64,9 +64,7 @@
 		else
 			var img = ["6_9coat1.jpeg", "6_9coat2.jpeg"];
 		return (img);
-<<<<<<< HEAD
 	}
-
 	function load_img_2(temp){
 		var img;
 		if (temp >= 27)
@@ -92,6 +90,4 @@
 
 	function right_click() {
 		alert("오른쪽을 누르셨습니다.");
-=======
->>>>>>> 0bacf8def300d1621c4cc124598d20f19b2d6bc2
 	}
