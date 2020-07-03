@@ -23,5 +23,22 @@
 			$("#weather-img").attr("src", imgURL);
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
+			var img;
+			if (temp >= 27)
+				img = "27_1.jpeg";
+			else if (temp >= 23)
+				img = "23_26_1.png";
+			//else if (temp >=)
+			$("#img").attr("src", img);
 		}
 	})
+
+	// function load_img(temp){
+	// 	var img;
+	// 	if (temp >= 27)
+	// 		img = "27_1.jpeg";
+	// 	else if (temp >= 23)
+	// 		img = "23_26_1.png";
+	// 	//else if (temp >=)
+	// 	$("#img").attr("src", img);
+	// }
