@@ -15,8 +15,8 @@
 			console.log("바람   : "+ resp.wind.speed );
 			console.log("나라   : "+ resp.sys.country );
 			console.log("도시이름  : "+ resp.name );
-			console.log("구름  : "+ (resp.clouds.all) +"%" );                 
+			console.log("구름  : "+ (resp.clouds.all) +"%" );
 		}
 	})
-var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
-	$("html컴포넌트").attr("src", imgURL);
+// var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
+// 	$("html컴포넌트").attr("src", imgURL);
