@@ -22,15 +22,6 @@
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp);
 			var img = load_img(temp);
-<<<<<<< HEAD
-			// window.onload = function()
-			// {
-			// var button = document.getElementById("right");
-			// button.onclick = (img = load_img_2(temp));
-			// }
-			// 버튼이 눌리면 img = load_img(temp);
-			$("#clothes-img").attr("src", img);
-=======
 			var i = 0;
 			$("#clothes-img").attr("src", img[i]);
 				var left = document.querySelector("#left");
@@ -43,8 +34,6 @@
 					i = 1;
 					$("#clothes-img").attr("src", img[i]);
 				});
->>>>>>> 0bacf8def300d1621c4cc124598d20f19b2d6bc2
-
 		}
 	})
 
