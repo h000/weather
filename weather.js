@@ -39,19 +39,19 @@
 
 	function load_img(temp){
 		if (temp >= 27)
-			var img = ["27_1.jpeg", "27_2.jpeg"];
+			var img = ["./imgs/27_1.jpeg", "./imgs/27_2.jpeg"];
 		else if (temp >= 23)
-			var img = ["23_26_1.png", "23_26_2.png"];
+			var img = ["./imgs/23_26_1.png", "./imgs/23_26_2.jpeg"];
 		else if (temp >= 20)
-			var img = ["20_22_1.jpeg", "20_22_2.jpeg"];
+			var img = ["./imgs/20_22_1.jpeg", "./imgs/20_22_2.jpeg"];
 		else if (temp >= 17)
-			var img = ["17_19_1.jpeg", "17_19_2.jpeg"];
+			var img = ["./imgs/17_19_1.jpeg", "./imgs/17_19_2.jpeg"];
 		else if (temp >= 12)
-			var img = ["12_16_1.jpeg", "12_16_2.jpeg"];
+			var img = ["./imgs/12_16_1.jpeg", "./imgs/12_16_2.jpeg"];
 		else if (temp >= 10)
-			var img = ["10_11_1.jpeg", "10_11_2.jpeg"];
+			var img = ["./imgs/10_11_1.jpeg", "./imgs/10_11_2.jpeg"];
 		else
-			var img = ["6_9coat1.jpeg", "6_9coat2.jpeg"];
+			var img = ["./imgs/6_9coat1.jpeg", "./imgs/6_9coat2.jpeg"];
 		return (img);
 	}
 	function load_img_2(temp){
