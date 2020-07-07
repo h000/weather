@@ -6,9 +6,10 @@ from collections import OrderedDict
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 
-driver = webdriver.Chrome("/Users/jiyoonhur/Downloads/chromedriver", chrome_options=options)
+driver = webdriver.Chrome('/Users/hpark/Downloads/chromedriver', chrome_options=options)
+#driver = webdriver.Chrome("/Users/jiyoonhur/Downloads/chromedriver", chrome_options=options)
 driver.implicitly_wait(3)
-driver.get("https://www.ssfshop.com/8Seconds/ssfshop/list?dspCtgryNo=SFMA41A01&brandShopNo=BDMA07A01&brndShopId=8SBSS&etcCtgryNo=&ctgrySectCd=&keyword=&leftBrandNM=8SECONDS_8SBSS")
+driver.get("https://www.ssfshop.com/8Seconds/Short-Sleeve/list?dspCtgryNo=SFMA41A01A02&brandShopNo=BDMA07A01&brndShopId=8SBSS&etcCtgryNo=&ctgrySectCd=&keyword=&leftBrandNM=8SECONDS_8SBSS")
 html = driver.page_source
 
 soup = BeautifulSoup(html, 'html.parser')
