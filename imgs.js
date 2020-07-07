@@ -1,4 +1,4 @@
-{
+var data = {
 	"0": "https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/8SBR/20/06/25/GM0020062590175_0_ORGINL_20200706154225771.jpg",
 	"1": "https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/8SBR/20/06/29/GM0020062992982_0_ORGINL_20200702123705930.jpg",
 	"2": "https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/8SBR/20/06/24/GM0020062488170_0_ORGINL_20200630095647208.jpg",
