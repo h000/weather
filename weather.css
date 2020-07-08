@@ -3,20 +3,18 @@
         }
 	.weather{
         position : relative;
-       	left: calc(50% - 203px/2 + 0.5px);
-        top: calc(50% - 44px/2 - 301px);
+       	/* left: calc(50% - 203px/2 + 0.5px);
+        top: calc(50% - 44px/2 - 301px); */
         font-family: "Playfair Display";
 		font-style: italic;
 		font-weight: normal;
+		line-height: 0px;
 		
-	}
-	button{
-		position:relative;
 	}
 	.title{
 		/*position: absolute;*/
-		width: 203px;
-		height: 44px;
+		/* width: 203px;
+		height: 44px; */
 
 
 		/* font-family: "Playfair Display";
@@ -27,6 +25,9 @@
 
 		color : #000000;
 
+	}
+	#city{
+		font-size: 20px;
 	}
 	/* #city{
 		position: absolute;
@@ -52,4 +53,8 @@
 		max-width: 500px;
 		max-height: 500px;
 	}
-	
+	.clothes{
+		display:flex;
+		justify-content:center;
+        align-items:center;
+	}
