@@ -1,55 +1,32 @@
     body{
             text-align : center;
-        }
+    }
 	.weather{
         position : relative;
-       	left: calc(50% - 203px/2 + 0.5px);
-        top: calc(50% - 44px/2 - 301px);
         font-family: "Playfair Display";
 		font-style: italic;
-		font-weight: normal;
-		
-	}
-	button{
-		position:relative;
+        font-weight: normal;
+        line-height: 0px;
 	}
 	.title{
-		/*position: absolute;*/
-		width: 203px;
-		height: 44px;
-
-
-		/* font-family: "Playfair Display";
-		font-style: italic;
-		font-weight: normal; */
 		font-size: 30px;
 		line-height: 40px;
-
 		color : #000000;
-
 	}
-	/* #city{
-		position: absolute;
-		width: 56px;
-		height: 32px;
-		left: 613px;
-		top: 85px;
-
-		font-family: Playfair Display;
-		font-style: italic;
-		font-weight: normal;
-		font-size: 20px;
-		line-height: 27px;
-
-		color: #000000;
-	} */
 	#temperature{
-		font-size : 30px;
-	}
+        font-size : 25px;
+    }
+    #city{
+        font-size :23px;
+    }
 	.max-small{
 		width : auto;
 		height : auto;
-		max-width: 500px;
-		max-height: 500px;
+		max-width: 440px;
+		max-height: 440px;
 	}
-	
+	.clothes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

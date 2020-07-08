@@ -20,7 +20,7 @@
 			var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
 			$("#weather-img").attr("src", imgURL);
 			var temp = Math.round(resp.main.temp- 273.15);
-			$("#temperature").html(temp);
+			$("#temperature").html(temp+ "°c");
 			//var img = load_img(temp);
 			var c = 0;
 			while (data[c])
