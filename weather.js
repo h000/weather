@@ -17,7 +17,7 @@ $(function() {
 			$("#clothes-img").attr("src", data[i]);
 		});
 })
-	var apiURI = "http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b98283b2e00f192262e1cd37cf03738e";
+	var apiURI = "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b98283b2e00f192262e1cd37cf03738e";
 	$.ajax({
 		url: apiURI,
 		dataType: "json",
