@@ -1,4 +1,4 @@
-{
+var spring = {
 	"0": "https://i.pinimg.com/236x/d9/af/ec/d9afecea4a9c7c588b06bdfecd25c425.jpg",
 	"1": "https://i.pinimg.com/236x/82/8e/95/828e957982a9a631a3ce0f65abe46f60.jpg",
 	"2": "https://i.pinimg.com/236x/79/f4/2c/79f42c33256cba28aab1f6f3e460fc87.jpg",

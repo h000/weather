@@ -21,10 +21,10 @@
         font-size :23px;
     }
 	.max-small{
-		width : auto;
-		height : auto;
-		max-width: 440px;
-		max-height: 440px;
+		width : 270px;
+		height : 400px;
+		/* max-width: 440px; */
+		/* max-height: 440px; */
 	}
 	.clothes{
         display: flex;

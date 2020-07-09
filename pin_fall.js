@@ -1,4 +1,4 @@
-{
+var fall ={
 	"0": "https://i.pinimg.com/236x/00/43/ac/0043ac97aed1650329ae4af9948336ca.jpg",
 	"1": "https://i.pinimg.com/236x/ed/c8/34/edc8341a4ac7d88a8112668d02a133e9.jpg",
 	"2": "https://i.pinimg.com/236x/1a/3b/10/1a3b10c0deff8d697e2765a12a043355.jpg",

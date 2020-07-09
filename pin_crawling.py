@@ -4,7 +4,7 @@ import json
 from collections import OrderedDict
 import time
 
-driver = webdriver.Chrome('/Users/jiyoonhur/Downloads/chromedriver')
+driver = webdriver.Chrome('/Users/jiyoonhur/Downloads/chromedriver', chrome_options=options)
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 driver.get("https://www.pinterest.co.kr/login/")

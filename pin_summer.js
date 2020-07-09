@@ -1,4 +1,4 @@
-{
+var summer ={
 	"0": "https://i.pinimg.com/236x/66/fd/2c/66fd2c5c9f6428f0dfdcc64bbd73ba41.jpg",
 	"1": "https://i.pinimg.com/236x/93/7b/30/937b304716a8638ba5b7041d4de2db14.jpg",
 	"2": "https://i.pinimg.com/236x/9f/81/95/9f8195f7437fd8c88e6f2db352e52c39.jpg",

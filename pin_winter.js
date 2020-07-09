@@ -1,4 +1,4 @@
-{
+var winter={
 	"0": "https://i.pinimg.com/236x/36/04/7a/36047a939820f05c810d869edf5857ed.jpg",
 	"1": "https://i.pinimg.com/236x/72/33/ad/7233adb3e4f39eabb88592feafd80497.jpg",
 	"2": "https://i.pinimg.com/236x/04/67/2b/04672b557692ac70d760aafde09eb7dd.jpg",
