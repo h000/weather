@@ -1,0 +1,33 @@
+body{
+    text-align : center;
+    background-color: rgba(220, 220, 220, 1);
+}
+.weather{
+    position : relative;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-weight: normal;
+    line-height: 0px;
+}
+.title{
+    font-size: 30px;
+    line-height: 40px;
+    color : #000000;
+}
+#temperature{
+    font-size : 25px;
+}
+#city{
+    font-size :23px;
+}
+.max-small{
+    width : 270px;
+    height : 400px;
+    /* max-width: 440px; */
+    /* max-height: 440px; */
+}
+.clothes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
