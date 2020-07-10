@@ -1,22 +1,3 @@
-$(function() {
-	var c = 0;
-	while (data[c])
-			c++;
-	var i = 0;
-	$("#clothes-img").attr("src", data[i]);
-		var left = document.querySelector("#left");
-		var right = document.querySelector("#right");
-		left.addEventListener("click", function(){
-			if (i > 0)
-				i -= 1;
-			$("#clothes-img").attr("src", data[i]);
-		});
-		right.addEventListener("click", function(){
-			if (i < c - 1)
-			i += 1;
-			$("#clothes-img").attr("src", data[i]);
-		});
-})
 	var apiURI = "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b98283b2e00f192262e1cd37cf03738e";
 	$.ajax({
 		url: apiURI,
@@ -39,7 +20,32 @@ $(function() {
 			$("#weather-img").attr("src", imgURL);
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp+ "°c");
-			//var img = load_img(temp);
-			
-			}
+			//이미지 개수 15개
+			data = img(temp);
+			var i = 0;
+			$("#clothes-img").attr("src", data[i]);
+			var left = document.querySelector("#left");
+			var right = document.querySelector("#right");
+			left.addEventListener("click", function(){
+				if (i > 0)
+					i -= 1;
+				$("#clothes-img").attr("src", data[i]);
+			});
+			right.addEventListener("click", function(){
+				if (i < 14)
+				i += 1;
+				$("#clothes-img").attr("src", data[i]);
+			});
+		}
 	})
+
+	function img(temp) {
+		if (temp >= 23)
+			return (summer);
+		else if (temp >= 17)
+			return (spring);
+		else if (temp >= 10)
+			return (fall);
+		else
+			return (winter);
+	}

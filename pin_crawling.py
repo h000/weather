@@ -4,9 +4,9 @@ import json
 from collections import OrderedDict
 import time
 
-driver = webdriver.Chrome('/Users/jiyoonhur/Downloads/chromedriver')
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
+driver = webdriver.Chrome('/Users/jiyoonhur/Downloads/chromedriver', chrome_options=options)
 driver.get("https://www.pinterest.co.kr/login/")
 
 # 현재 크롬에 떠 있는 웹페이지에서 id 속성 값이 id 인 element를 찾음

@@ -10,21 +10,21 @@
         line-height: 0px;
 	}
 	.title{
-		font-size: 30px;
-		line-height: 40px;
+		font-size: 60px;
+		line-height: 80px;
 		color : #000000;
 	}
 	#temperature{
-        font-size : 25px;
+        font-size : 50px;
     }
     #city{
-        font-size :23px;
+        font-size :46px;
     }
 	.max-small{
-		width : auto;
-		height : auto;
-		max-width: 440px;
-		max-height: 440px;
+		width : 540px;
+		height : 800px;
+		/* max-width: 440px; */
+		/* max-height: 440px; */
 	}
 	.clothes{
         display: flex;
