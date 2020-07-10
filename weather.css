@@ -13,7 +13,12 @@
 		font-size: 60px;
 		line-height: 80px;
 		color : #000000;
-	}
+    }
+    .city_weather{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 	#temperature{
         font-size : 50px;
     }
