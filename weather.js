@@ -1,5 +1,31 @@
-var apiURI = "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b98283b2e00f192262e1cd37cf03738e";
-	$.ajax({
+var apiURI = {
+	"0" : "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b98283b2e00f192262e1cd37cf03738e",
+	"1" : "https://api.openweathermap.org/data/2.5/weather?q=London&appid=b98283b2e00f192262e1cd37cf03738e",
+	"2" : "https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=b98283b2e00f192262e1cd37cf03738e"
+}
+var i = 0;
+api(apiURI[0]);
+
+var left = document.querySelector("#left_w");
+var right = document.querySelector("#right_w");
+left.addEventListener("click", function(){
+	if (i > 0)
+	{
+		i -= 1;
+		api(apiURI[i]);
+	}
+});
+right.addEventListener("click", function(){
+	if (i < 2)
+	{
+		i += 1;
+		api(apiURI[i]);
+	}
+});
+
+function api(apiURI)
+{
+$.ajax({
 		url: apiURI,
 		dataType: "json",
 		type: "GET",
@@ -18,6 +44,7 @@ var apiURI = "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b982
 			
 			var imgURL = "http://openweathermap.org/img/w/" + resp.weather[0].icon + ".png";
 			$("#weather-img").attr("src", imgURL);
+			$("#city").html(resp.name);
 			var temp = Math.round(resp.main.temp- 273.15);
 			$("#temperature").html(temp+ "°c");
 			//이미지 개수 15개
@@ -38,7 +65,7 @@ var apiURI = "https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=b982
 			});
 		}
 	})
-
+}
 	function img(temp) {
 		if (temp >= 23)
 			return (summer);

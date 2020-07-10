@@ -7,7 +7,7 @@ body{
     font-family: "Playfair Display";
     font-style: italic;
     font-weight: normal;
-    line-height: 0px;
+	line-height: 0px;
 }
 .title{
     font-size: 60px;
@@ -28,6 +28,11 @@ body{
 }
 .clothes{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city_weather{
+	display: flex;
     justify-content: center;
     align-items: center;
 }
